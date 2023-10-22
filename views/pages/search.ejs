@@ -1,0 +1,29 @@
+
+<%- include('../common/links') %>
+<% if(msg) {%>
+<div class="alert alert-primary" role="alert">
+  Post submitted Successfuly!
+</div>
+<% };%>
+
+<form action="post_new_news" method="POST">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"><strong>Blog Title</strong></label>
+  <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Enter Title" required>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label"><strong>Blog Article</strong></label>
+  <textarea class="form-control" name="cmessage" placeholder="Type some message..." id="exampleFormControlTextarea1" required rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary btn-lg px-4">Send</button>
+</form>
+
+  <%- include('../common/footer') %>
+</div>
+
+
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
